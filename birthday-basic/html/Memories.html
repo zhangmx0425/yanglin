@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>萌萌的专属</title>
+    <link rel="stylesheet" href="../css/jquery.fullPage.css" type="text/css" />
+    <link rel="stylesheet" href="../css/memories.css" type="text/css" />
+    <link rel="stylesheet" href="../css/bubbles.css" type="text/css" />
+    <style>
+        body {
+            perspective: 1000px;
+        }
+
+        section {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 150px auto;
+            transform-style: preserve-3d;
+            /* 添加动画效果 */
+            animation: rotate 10s linear infinite;
+            background: url(../img/0.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section:hover {
+            /* 鼠标放入section 停止动画 */
+            animation-play-state: paused;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        section div:nth-child(1) {
+            transform: rotateY(0) translateZ(300px);
+            background: url(../img/1.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section div:nth-child(2) {
+            /* 先旋转好了再 移动距离 */
+            transform: rotateY(60deg) translateZ(300px);
+            background: url(../img/2.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section div:nth-child(3) {
+            /* 先旋转好了再 移动距离 */
+            transform: rotateY(120deg) translateZ(300px);
+            background: url(../img/3.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section div:nth-child(4) {
+            /* 先旋转好了再 移动距离 */
+            transform: rotateY(180deg) translateZ(300px);
+            background: url(../img/4.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section div:nth-child(5) {
+            /* 先旋转好了再 移动距离 */
+            transform: rotateY(240deg) translateZ(300px);
+            background: url(../img/5.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        section div:nth-child(6) {
+            /* 先旋转好了再 移动距离 */
+            transform: rotateY(300deg) translateZ(300px);
+            background: url(../img/6.jpg) no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgcolor">
+        <div style="z-index:100;" id="dowebok">
+            <!--第一屏-->
+            <div class="section">
+                <div class="ly-box01">
+                    <div class="ly-txt01">
+                        <p class="ly-stxt01">看花的娇艳，思念着你的容颜</p>
+                        <p class="ly-stxt02">望流云飘逸，惦记着你的佳期</p>
+                        <p class="ly-stxt03">轻轻地屏住呼吸，距离太远还是无法感受到你</p>
+                        <p class="ly-stxt04">可祝福与你形影不离，在你的生日到来之际，诚挚地献上我的三个祝愿：</p>
+                        <p class="ly-stxt05">一愿你身体健康</p>
+                    </div>
+                    <div class="ly-txt02">
+                        <p class="ly-stxt06">二愿你幸福快乐</p>
+                        <p class="ly-stxt07">三愿你万事如意，笑容美丽！</p>
+                        <p class="ly-stxt08">致全世界最可爱的萌萌</p>
+
+                    </div>
+                </div>
+            </div>
+            <!--第二屏-->
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint11"></div>
+                <div class="ly-box11">
+                    <div class="ly-txt11">
+                        2021-01-15
+                    </div>
+                    <div class="ly-txt12">
+                        因为一次偶然发的说说，让我们终于相识。
+                    </div>
+                    <div class="ly-imgbox11">
+                        <img class="ly-img11" src="../img/2021-01-15.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle11"></div>
+
+                <div class="ly-box12">
+                    <div class="ly-txt13">
+                        2021-01-16
+                    </div>
+                    <div class="ly-txt14">
+                        <p>仅仅一天呢..</p>
+                        <p>这个姑娘为什么这么可爱呀</p>
+                        <p>这个姑娘为什么这么善良呀</p>
+                        <p>这个姑娘为什么不属于我呢..</p>
+                    </div>
+                </div>
+                <div class="ly-triangle12"></div>
+            </div>
+
+            <!--第三屏-->
+
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint21"></div>
+                <div class="ly-box21">
+                    <div class="ly-txt21">
+                        2021-01-31
+                    </div>
+                    <div class="ly-txt22">
+                        <p>萌萌今天我知道你生日了呢~</p>
+                        <p>也是这一天，我知道了你会弹吉他，怪不得拨动了我的心弦~</p>
+                    </div>
+                    <div class="ly-imgbox21">
+                        <img class="ly-img21" src="../img/2021-01-31.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle21"></div>
+
+                <div class="ly-box22">
+                    <div class="ly-txt23">
+                        2021-02-01
+                    </div>
+                    <div class="ly-txt24">
+                        <p>今天你和我说昨夜做噩梦了，其实你一月份的睡眠质量都不好</p>
+                        <p>我多想能陪着你呀</p>
+                        <p>我都记得..</p>
+                    </div>
+                    <div class="ly-imgbox22">
+                        <img class="ly-img22" src="../img/2021-02-01.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle22"></div>
+
+                <div class="ly-box23">
+                    <div class="ly-txt25">
+                        2021-02-02
+                    </div>
+                    <div class="ly-txt26">
+                        <p>嘿嘿~萌萌今天我知道你最爱吃什么了!</p>
+                        <p>放几张火锅图片馋死你，略略略</p>
+                    </div>
+                    <div class="ly-imgbox23">
+                        <img class="ly-img23" src="../img/2021-02-02.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle23"></div>
+            </div>
+
+            <!--第四屏-->
+
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint31"></div>
+                <div class="ly-box31">
+                    <div class="ly-txt31">
+                        2021-02-03
+                    </div>
+                    <div class="ly-txt32">
+                        <p>今天你姨妈来了</p>
+                        <p>你肚子疼的那么厉害，我真的好心疼..</p>
+                        <p>如果可以的话，我真希望每次来例假我都可以照顾你</p>
+                        <p>无论春夏秋冬..</p>
+                    </div>
+                    <div class="ly-imgbox31">
+                        <img class="ly-img31" src="../img/2021-02-03.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle31"></div>
+
+                <div class="ly-box32">
+                    <div class="ly-txt33">
+                        2021-02-04
+                    </div>
+                    <div class="ly-txt34">
+                        <p>今天我知道你前任的事情了..</p>
+                        <p>我也终于明白你为什么一月份噩梦缠绕了</p>
+                        <p>愿有我陪着你后，不再做噩梦..</p>
+                        <p>每晚都是好梦！</p>
+                    </div>
+                    <div class="ly-imgbox31">
+                        <img class="ly-img31" src="../img/2021-02-04.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle32"></div>
+            </div>
+
+            <!--第五屏-->
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint21"></div>
+                <div class="ly-box52">
+                    <div class="ly-txt21">
+                        2021-02-05
+                    </div>
+                    <div class="ly-txt22">
+                        <p>今天我知道了你还有专升本这座山压着</p>
+                        <p>我并没有让你放宽心，我知道你很累很迷茫</p>
+                        <p>你很累对吗？</p>
+                        <p>累就对了，舒服是留给死人的</p>
+
+                    </div>
+                    <div class="ly-imgbox21">
+                        <img class="ly-img21" src="../img/2021-02-05.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle21"></div>
+
+                <div class="ly-box22">
+                    <div class="ly-txt23">
+                        2021-02-06
+                    </div>
+                    <div class="ly-txt51">
+                        <p>我第一次听见了你的声音呢..</p>
+                        <p>喂！你糖吃多了吧，声音要不要这么甜！</p>
+                    </div>
+                    <div class="ly-imgbox22">
+                        <img class="ly-img22" src="../img/2021-02-06.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle22"></div>
+
+                <div class="ly-box51">
+                    <div class="ly-txt25">
+                        2021-02-07
+                    </div>
+                    <div class="ly-txt26">
+                        <p>你说你希望你二十三岁的时候我还在</p>
+                        <p>我想说..</p>
+                        <p>九十三岁我也在好不好！</p>
+                        <p>我哪能那么容易让你摆脱我呢</p>
+                    </div>
+                    <div class="ly-imgbox23">
+                        <img class="ly-img23" src="../img/2021-02-07.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle23"></div>
+            </div>
+
+            <!--第六屏-->
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint21"></div>
+                <div class="ly-box21">
+                    <div class="ly-txt21">
+                        2021-02-08
+                    </div>
+                    <div class="ly-txt22">
+                        <p>你说你梦到我啦~</p>
+                        <p>梦到我带你去看家具，问你喜欢什么家具</p>
+                        <p>我好开心啊，我也相信这也不仅仅只是一个梦..</p>
+                    </div>
+                    <div class="ly-imgbox21">
+                        <img class="ly-img21" src="../img/2021-02-08.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle21"></div>
+
+                <div class="ly-box22">
+                    <div class="ly-txt23">
+                        2021-02-09
+                    </div>
+                    <div class="ly-txt24">
+                        <p>时间过得好快啊，都说陪伴是最长情的告白，我发现自己越来越离不开你了..</p>
+                        <p>我着迷于你的眼睛，银河有迹可循</p>
+                        <p>我着迷于你的性格，每天都春暖花开</p>
+                    </div>
+                </div>
+                <div class="ly-triangle22"></div>
+
+                <div class="ly-box23">
+                    <div class="ly-txt25">
+                        致我唯爱的萌萌
+                    </div>
+                    <div class="ly-txt61">
+                        <p class="wwww1">你是我临死前还想拔掉氧气管亲吻的人</p>
+                        <p class="wwww1">你是我跑完5000米还想拥抱的人</p>
+                        <p class="wwww1">你是我隔着人海也能一眼看到的人</p>
+                        <p class="wwww1">你是我倾盆大雨忽而的向往，冰封万忽而的暖阳</p>
+                        <p class="wwww1">你是我曾幻想的远方，不灭星光</p>
+                        <p class="wwww1">你是我心心念念的未来</p>
+                        <p class="wwww1">你想要的，我能给的，我都会给你。</p>
+                    </div>
+                </div>
+                <div class="ly-triangle23"></div>
+            </div>
+
+            <!--第七屏-->
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint71"></div>
+                <div class="ly-box21 xx71">
+                    <div class="ly-txt21">
+                        2021-02-10
+                    </div>
+                    <div class="ly-txt22">
+                        <p>我到家了，但是这并不是我最开心的事情</p>
+                        <p>因为这一天我不要脸的蹭上和你情头了~</p>
+                    </div>
+                    <div class="ly-imgbox21">
+                        <img class="ly-img21" src="../img/2021-02-10.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle21 xx72"></div>
+
+                <div class="ly-box71">
+                    <div class="ly-txt23">
+                        2021-02-11
+                    </div>
+                    <div class="ly-txt71">
+                        <p>这大概是我最沮丧的一天了吧..情头没了你赔我呜呜呜</p>
+                    </div>
+                    <div class="ly-imgbox71">
+                        <img class="ly-img71" src="../img/2021-02-11.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle22"></div>
+
+                <div class="ly-box72">
+                    <div class="ly-txt25">
+                        2021-02-12
+                    </div>
+                    <div class="ly-txt72">
+                        <p>今天我印象很深刻呢，我欠你一顿火锅！</p>
+                    </div>
+                    <div class="ly-imgbox72">
+                        <img class="ly-img72" src="../img/2021-02-12.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle71"></div>
+
+                <div class="ly-box73">
+                    <div class="ly-txt25">
+                        2021-02-13
+                    </div>
+                    <div class="ly-txt73">
+                        <p>你说认识我真的很好</p>
+                        <p>我想说有你才最好</p>
+                    </div>
+                    <div class="ly-imgbox73">
+                        <img class="ly-img73" src="../img/2021-02-13.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle72"></div>
+            </div>
+
+            <!--第八屏-->
+
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint11"></div>
+                <div class="ly-box81">
+                    <div class="ly-txt11">
+                        萌萌
+                    </div>
+                    <div class="ly-txt82">
+                        我发现我真的离不开你了..
+                    </div>
+                    <div class="ly-imgbox81">
+                        <img class="ly-img81" src="../img/2021-02-13-1.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle11"></div>
+
+                <div class="ly-box82">
+                    <div class="ly-txt13">
+                        2021-02-15
+                    </div>
+                    <div class="ly-txt84">
+                        <p class="wwww1">马上就是你的生日了</p>
+                        <p class="wwww1">
+                            我好开心啊！感谢上天让我遇见这么一位可爱的女孩
+                        </p>
+                        <p class="wwww1">
+                            我好难过啊！我多想陪你过生日，可惜身处异地..
+                        </p>
+                        <p class="wwww1">没有甜美的蛋糕，缤红的美酒，丰厚的礼物，悠扬的生日歌，不要遗憾，你拥有世界上最真心的祝福，生日快乐</p>
+                        <p class="wwww1">致我唯爱的萌萌！</p>
+                    </div>
+                </div>
+                <div class="ly-triangle82"></div>
+            </div>
+            <!--第十屏-->
+
+            <div class="section">
+                <div class="timeline"></div>
+                <div class="timepoint11"></div>
+                <div class="ly-box81">
+                    <div class="ly-txt11">
+                        2100-XX-XX
+                    </div>
+                    <div class="ly-txt82" style="top:8%">
+                        <p class="wwww1">虽然记录的时间只到了15号，但是我相信..</p>
+                        <p>2100年我还在，我能最后亲吻你额头，闭上眼睛..</p>
+                        <p class="wwww1">你知道吗</p>
+                        <p class="wwww1">我仿佛上辈子就认识你</p>
+                        <p class="wwww1">不..</p>
+                        <p class="wwww1">我肯定</p>
+                        <p class="wwww1">我肯定在几百年前就说过爱你</p>
+                        <p class="wwww1">只是你忘了</p>
+                        <p class="wwww1">我也不记得而已..</p>
+                    </div>
+                    <div class="ly-imgbox81">
+                        <img class="ly-img81" src="../img/xx.jpg">
+                    </div>
+                </div>
+                <div class="ly-triangle11"></div>
+
+                <div class="ly-box82">
+                    <div class="ly-txt13">
+                        萌萌的旋转木马
+                    </div>
+                    <div class="ly-txt84">
+                        <section>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </section>
+                    </div>
+                </div>
+                <div class="ly-triangle82"></div>
+            </div>
+
+        </div>
+        <!--试验-->
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+    <script src="../js/jquery-2.1.1.min.js"></script>
+    <script src="../js/jquery.fullPage.min.js"></script>
+    <!-- <script src="../js/auto-play.js"></script> -->
+    <script src="../js/memories.js"></script>
+    <audio src="../music/1.mp3" autoplay="autoplay" loop="loop"></audio>
+</body>
+
+</html>
